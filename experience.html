@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience | Samar Ahmad</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+        background-image: url('back.png'); /* Add background image */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    header {
+        background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        margin-bottom: 30px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        color: #f1f1f1;
+    }
+
+    .experience-container {
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .experience-box {
+        background: rgba(51, 51, 51, 0.7); /* Transparent background */
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .experience-box:hover {
+        transform: scale(1.05);
+        background-color: rgba(0, 0, 0, 0.8); /* Darker transparent background on hover */
+    }
+
+    .experience-box h3 {
+        margin-bottom: 10px;
+        color: #b18a54;
+        font-size: 1.5rem;
+    }
+
+    .experience-box p {
+        font-size: 1.1rem;
+        color: #ccc;
+        margin-bottom: 10px;
+    }
+
+    .experience-box .role {
+        font-weight: bold;
+    }
+
+    .back-button {
+        display: inline-block;
+        margin: 20px;
+        padding: 10px 20px;
+        background-color: #060716;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+        background-color: #444;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+        .experience-box {
+            width: 90%;
+            margin: 10px 0;
+        }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Experience</h1>
+  <p>Here are some of the experiences and roles I've had throughout my journey.</p>
+</header>
+
+<section class="experience-container">
+    <!-- Microsoft -->
+    <div class="experience-box">
+        <h3>Microsoft</h3>
+        <p class="role">Student Technical Training</p>
+        <p>Underwent technical training at Microsoft, where I gained knowledge in various technologies and developed key skills to build innovative solutions.</p>
+    </div>
+
+    <!-- NSS IIT Delhi -->
+    <div class="experience-box">
+        <h3>NSS IIT Delhi</h3>
+        <p class="role">Campus Ambassador</p>
+        <p>Represented the National Service Scheme (NSS) at IIT Delhi, promoting social initiatives, community service, and engaging students in impactful projects.</p>
+    </div>
+
+    <!-- eDC IIT Delhi -->
+    <div class="experience-box">
+        <h3>eDC IIT Delhi</h3>
+        <p class="role">Campus Ambassador</p>
+        <p>Promoted the Entrepreneurship Development Cell (eDC) at IIT Delhi, helping students engage with startup ecosystems and fostering entrepreneurial thinking.</p>
+    </div>
+
+</section>
+
+<a href="index.html" class="back-button">Back to Home</a>
+
+</body>
+</html>

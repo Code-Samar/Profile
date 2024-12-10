@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Samar Ahmad</title>
+  <style>
+
+
+main {
+        text-align: justify; /* Justify the text */
+        padding: 0 5%; /* Adds padding to the left and right */
+        max-width: 1250px; /* Optional, limits the width of the text */
+        margin: 0 auto; /* Centers the text */
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+        line-height: 1.6;
+    }
+
+    /* General Styles */
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: url('back.png') no-repeat center center fixed; /* Background set to back.png */
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        color: white;
+    }
+
+    /* Background Blur Image */
+    .background-blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('back.png'); /* Replace with your image URL */
+        background-size: cover;
+        filter: blur(5px); /* Adjust blur intensity */
+        z-index: -1; /* Ensure it stays behind content */
+    }
+
+    /* Header */
+    header {
+        text-align: center;
+        color: white;
+        padding: 30px 20px;
+        animation: fadeIn 2s ease-in;
+    }
+
+    header .hero-title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin: 0;
+        letter-spacing: 2px;
+        background: linear-gradient(90deg, #e4e4e1, #f0eeef);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: slideIn 1.5s ease-out;
+    }
+
+    header .hero-subtitle {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        color: #ddd;
+        animation: fadeIn 3s ease;
+    }
+
+    main {
+        text-align: center;
+        padding: 5px 20px;
+    }
+
+    main p {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+        line-height: 1.6;
+        animation: fadeIn 1.5s ease-in;
+    }
+
+    /* Skills Section */
+    .skills-container {
+        padding: 40px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .skill-box {
+        background: rgba(0, 0, 0, 0.6); /* Transparent black background */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        width: 220px;
+        padding: 20px;
+        color: white;
+        transition: transform 0.3s, background-color 0.3s;
+        position: relative;
+    }
+
+    .skill-box:hover {
+        transform: scale(1.05);
+        background-color: rgba(0, 0, 0, 0.6); /* Darker background color on hover */
+    }
+
+    .skill-box h3 {
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+
+    .skill-box p {
+        color: #ddd;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    .skill-box a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Back Button - Position it in the leftmost bottom corner */
+    .back-button {
+        position: fixed; /* Keeps the button fixed */
+        bottom: 20px; /* Distance from the bottom of the screen */
+        left: 20px; /* Distance from the left edge of the screen */
+        padding: 10px 20px;
+        background-color: #000000; /* Black background */
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+        z-index: 1000; /* Makes sure it stays on top of other content */
+    }
+
+    .back-button:hover {
+        background-color: #444; /* Darken the background color on hover */
+        transform: translateY(-3px); /* Slight raise effect */
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1px 0;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(-50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Blur Image -->
+  <div class="background-blur"></div>
+
+  <!-- Header Section -->
+  <header>
+    <h1 class="hero-title">About Me</h1>
+    <p class="hero-subtitle">Learn more about my skills, experiences, and interests.</p>
+  </header>
+
+  <!-- About Me Section -->
+  <main>
+    <p>
+      I am a passionate Computer Science and Engineering (CSE) student who loves coding, graphic design, and creative problem-solving. My journey includes creating dynamic websites, solving complex problems, and designing stunning visuals.
+
+      As an aspiring computer science professional, I am an eager and dynamic individual with a solid foundation in data structures and algorithms. I have a proven track record of leadership at NSS IIT Delhi. I specialize in Python and C, showcasing exceptional problem-solving abilities and a flair for critical thinking. I have successfully fostered teamwork and delivered compelling presentations, always aiming to drive projects to completion with innovation and efficiency.
+
+      I strive to gain a comprehensive understanding of computer science principles and software development methodologies. In addition to my CSE studies, I am pursuing a Bachelor of Science in Data Science and Applications at IIT Madras. I am excited to embark on this journey.
+    </p>
+  </main>
+
+  <!-- Skills Section -->
+  <section class="skills-container">
+    <div class="skill-box">
+        <a href="skills.html">
+            <h3>Skills</h3>
+            <p>Explore the various technical and creative skills I have acquired throughout my academic and personal projects.</p>
+        </a>
+    </div>
+    <div class="skill-box">
+        <a href="experience.html">
+            <h3>Experience</h3>
+            <p>Learn about the projects and internships I have undertaken to gain practical knowledge and real-world experience.</p>
+        </a>
+    </div>
+    <div class="skill-box">
+        <a href="interests.html">
+            <h3>Interests</h3>
+            <p>Discover the activities and hobbies that drive my passion for technology, design, and problem-solving.</p>
+        </a>
+    </div>
+    <div class="skill-box">
+        <a href="certification.html">
+            <h3>Certifications</h3>
+            <p>Check out the certifications I have earned to further enhance my skills and knowledge in the field of technology.</p>
+        </a>
+    </div>
+    <div class="skill-box">
+        <a href="education.html">
+            <h3>Education</h3>
+            <p>Understand the educational background that has shaped my journey as a student and future professional.</p>
+        </a>
+    </div>
+  </section>
+
+  <!-- Back to Home Button -->
+  <a href="index.html" class="back-button">Back to Home</a>
+
+  
+
+</body>
+</html>
